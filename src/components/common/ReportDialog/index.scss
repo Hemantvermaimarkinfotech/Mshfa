@@ -1,0 +1,41 @@
+@import 'src/styles/variables';
+
+.MuiDialogContent-root {
+  &.dialog-content-style {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .report-modal {
+    width: 454px;
+    max-height: 550px;
+    display: flex;
+    flex-direction: column;
+    &.small {
+      height: 88px;
+    }
+    &__description {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 12px;
+      background-color: $brand_color_grey_light;
+      font-size: 14px;
+      line-height: 20px;
+      color: $brand_color_black_lighter;
+      letter-spacing: 0.25px;
+      &__icon {
+        margin-right: 11px;
+      }
+    }
+    &__buttons {
+      display: flex;
+      justify-content: flex-end;
+      height: 48px;
+      margin: 20px 0;
+      .neutral-button {
+        background-color: rgb(194, 194, 194);
+        margin-right: 10px;
+      }
+    }
+  }
+}

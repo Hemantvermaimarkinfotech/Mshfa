@@ -1,0 +1,11 @@
+.lang-switcher {
+  margin: 0 10px;
+  display: flex;
+  cursor: pointer;
+  color: white;
+  align-items: center;
+  margin: 0 -3px;
+  &>* {
+    margin: 0 3px;
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../../styles/variables";
+
+.address-list {
+  &__icon {
+    width: 48px;
+    height: 48px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 17px 0;
+    margin: 0 -4px;
+    & > * {
+      margin: 0 4px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    color: $brand_color_black;
+  }
+  &__is_primary {
+    color: $brand_color_grey;
+  }
+}

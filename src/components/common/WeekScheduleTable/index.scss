@@ -1,0 +1,27 @@
+@import "src/styles/variables";
+
+.week-schedule-table {
+  &__day {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  &__title {
+    font-family: 'Roboto-Medium';
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $brand_color_grey;
+    width: 70px;
+    font-size: 14px;
+  }
+  &__slots {
+    display: flex;
+  }
+  &__slot {
+    margin-right: 48px;
+    font-size: 16px;
+    color: $brand-color_black;
+    width: 160px;
+  }
+}

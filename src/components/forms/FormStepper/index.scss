@@ -1,0 +1,67 @@
+@import "src/styles/variables";
+
+.form-stepper {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  &__step-outer {
+    display: flex;
+  }
+  &__clickable {
+    cursor: pointer;
+  }
+  &__step {
+    display: flex;
+    position: relative;
+    text-align: center;
+    &--highlighted {
+      .form-stepper__number {
+        background-color: $brand_color;
+      }
+      .form-stepper__title {
+        color: $brand_color;
+      }
+    }
+    &--active {
+      .form-stepper__number {
+        background-color: $brand_color;
+      }
+      .form-stepper__title {
+        color: $brand_color_black;
+      }
+    }
+  }
+  &__connector {
+    border-bottom: 1px solid $brand_color_grey;
+    margin: 0 8px;
+    width: 48px;
+    height: 12px;
+  }
+  &__title {
+    color: $brand_color_grey;
+    font-size: 14px;
+    margin: 0 4px;
+  }
+  &__number {
+    background-color: $brand_color_grey;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+  }
+  &__check {
+    color: $brand_color;
+    margin-right: 8px;
+    &.MuiSvgIcon-root {
+      transform: scale(1.2);
+    }
+  }
+  &__step-content {
+    display: flex;
+    align-items: center;
+  }
+}

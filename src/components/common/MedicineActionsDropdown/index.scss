@@ -1,0 +1,43 @@
+@import "src/styles/variables";
+
+.medicine-actions-dropdown {
+  padding: 8px 0;
+  width: 240px;
+  &__item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 13px 22px;
+    width: 100%;
+    .MuiIconButton-root {
+      padding: 0;
+      width: 18px;
+      height: 18px;
+    }
+    &:hover {
+      background-color: $brand_color_grey_light;
+    }
+  }
+  &__text {
+    margin: 0 18px;
+    line-height: 18px;
+  }
+
+  &__button {
+    cursor: pointer;
+    color: $brand_color_grey;
+    font-size: 16px;
+  }
+
+  &__link {
+    display: flex;
+    font-size: 16px;
+  }
+
+  &__icon {
+    margin: 0;
+    &--logout {
+      color: $brand_color_grey;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import 'src/styles/variables';
+
+.pharmacists {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+    button {
+      width: 110px;
+    }
+  }
+  .table {
+    .MuiDataGrid-root {
+      background-color: #fff;
+    }
+    .MuiDataGrid-columnsContainer {
+      background-color: rgb(252, 253, 254);
+    }
+  }
+  &--empty-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    .description {
+      color: $brand_color_grey;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      margin-top: 24px;
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+      margin-top: 24px;
+      button {
+        width: 210px;
+      }
+    }
+  }
+}
+

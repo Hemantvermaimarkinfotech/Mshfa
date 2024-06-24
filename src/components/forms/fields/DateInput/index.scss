@@ -1,0 +1,120 @@
+@import "src/styles/variables";
+
+.MuiPickersDay-daySelected {
+  background-color: $brand_color !important;
+
+}
+
+.MuiPickersDay-daySelected, .MuiPickersDay-current {
+  background-color: $brand_color;
+  color: white;
+}
+
+.MuiPickersYear-yearSelected, .MuiPickersMonth-monthSelected {
+  color: $brand_color !important;
+}
+
+.date-input {
+
+  .MuiInputBase-root {
+    padding-top: unset;
+    padding-bottom: unset;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid rgb(211, 216, 221);
+    border-radius: 4px;
+    font-size: 13px;
+    height: 40px;
+    &.Mui-error {
+      border-color: $brand_color_error;
+    }
+    .MuiIconButton-root {
+      padding: 10px 0;
+      &:hover {
+        background: none;
+      }
+    }
+  }
+  .MuiInputBase-input {
+    padding: 0;
+    font-size: 15px;
+
+  }
+  .MuiTextField-root {
+    .MuiFormHelperText-root {
+      display: none;
+    }
+    &.input-wide {
+      width: 240px;
+    }
+    .MuiFormLabel-root {
+      color: #b2b9c4;
+      background-color: white;
+      left: 1px;
+      padding: 0 12px;
+      z-index: 1;
+      pointer-events: none;
+      transform: translate(0px, 12px) scale(1);
+      &.MuiInputLabel-shrink {
+        transform: translate(14px, -6px) scale(0.75);
+      }
+    }
+    .MuiInput-root {
+      margin-top: 0;
+    }
+  }
+  .MuiSvgIcon-root {
+    fill: $brand_color
+  }
+}
+.MuiPaper-root {
+  .MuiPickersBasePicker-container {
+    flex-direction: column-reverse;
+    .picker-toolbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 16px 16px;
+      button {
+        display: flex;
+        width: calc(100% / 2 - 10px);
+      }
+    }
+    .picker-toolbar-wide {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 16px 16px;
+      button {
+        display: flex;
+        width: 100%;
+      }
+    }
+    .MuiPickersCalendar-week {
+      .MuiIconButton-root {
+        border-radius: 3px;
+      }
+      .highlight {
+        border-radius: 0;
+        background-color: $brand_color_grey_lighter;
+        &:hover, &:focus {
+          background-color: $brand_color_grey;
+        }
+      }
+      .first-highlight, .last-highlight {
+        background: $brand_color;
+        box-shadow: 0 4px 8px rgba(84, 110, 122, 0.24);
+        border-radius: 3px;
+        .MuiIconButton-label {
+          color: $brand_color_white;
+        }
+      }
+      .disabled {
+        button {
+          color: rgba(0, 0, 0, 0.38);
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}

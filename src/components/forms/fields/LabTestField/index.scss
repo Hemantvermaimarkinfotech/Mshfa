@@ -1,0 +1,53 @@
+@import "src/styles/variables";
+
+.specialization-field {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    &--semi {
+      margin-bottom: 26px;
+    }
+    &--compact {
+      justify-content: flex-start;
+    }
+  }
+
+  &__close {
+    cursor: pointer;
+    &.MuiSvgIcon-root {
+      color: $brand_color_grey;
+      font-size: 30px;
+      &:hover {
+        color: $brand_color;
+      }
+    }
+  }
+
+  .specialization-field__row {
+    .autocomplete-input {
+      width: 305px;
+    }
+    .select-input {
+      width: 177px;
+    }
+    .text-field {
+      width: 153px;
+    }
+    .checkbox-field {
+      .MuiFormControlLabel-label {
+        color: $brand_color_black;
+      }
+    }
+  }
+
+  &--completed {
+    margin-bottom: 32px;
+    border-bottom: 1px solid $brand_color_grey;
+  }
+}

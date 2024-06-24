@@ -1,0 +1,38 @@
+.add-order-item-modal {
+  width: 454px;
+  height: 454px;
+  display: flex;
+  flex-direction: column;
+  &__row {
+    margin-bottom: 32px;
+  }
+  form {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  &--buttons {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+    button {
+      display: flex;
+      width: 120px;
+      &.neutral-button {
+        margin-right: 10px;
+      }
+      &.neutral-button, &.primary-button {
+        padding: 8px;
+      }
+    }
+  }
+  .picture-field {
+    .close-icon {
+      top: 0;
+      right: -30px;
+    }
+  }
+}

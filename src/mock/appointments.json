@@ -1,0 +1,123 @@
+[
+  {
+    "avatarPatient": "",
+    "id": 0,
+    "patient": "Denis",
+    "doctor": "Denis",
+    "date": "02.03, 12:02:22",
+    "diagnosis": "Cancer",
+    "paymentMethod": "Contract",
+    "status": "Confirmed",
+    "included": ["rx", "chat", "attachments", "lab-tests"]
+  },
+  {
+    "avatarPatient": "",
+    "id": 1,
+    "patient": "Alexey",
+    "doctor": "Denis",
+    "date": "02.03, 12:02:22",
+    "diagnosis": "Cancer 4 stage close to death",
+    "paymentMethod": "Contract",
+    "status": "Unresolved",
+    "included": ["rx", "chat", "lab-tests"]
+  },
+  {
+    "avatarPatient": "",
+    "id": 2,
+    "patient": "Blah",
+    "doctor": "Denis",
+    "date": "02.03, 12:02:22",
+    "diagnosis": "Flu",
+    "paymentMethod": "Contract",
+    "status": "In progress",
+    "included": ["rx", "chat", "attachments"]
+  },
+  {
+    "avatarPatient": "",
+    "id": 3,
+    "patient": "Anton",
+    "doctor": "Denis",
+    "date": "02.03, 12:02:22",
+    "diagnosis": "Flu",
+    "paymentMethod": "Contract",
+    "status": "Resolved",
+    "included": ["chat", "attachments", "lab-tests"]
+  },
+  {
+    "avatarPatient": "",
+    "id": 5,
+    "patient": "Di Caprio",
+    "doctor": "Denis",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "Flu",
+    "paymentMethod": "Insurance",
+    "status": "Cancelled",
+    "included": ["rx"]
+  },
+  {
+    "avatarPatient": "",
+    "id": 6,
+    "patient": "Di Caprio Alonso",
+    "doctor": "Denis",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "Flu",
+    "paymentMethod": "Contract",
+    "status": "Not paid",
+    "included": ["rx", "lab-tests"]
+  },
+  {
+    "avatarPatient": "",
+    "id": 7,
+    "patient": "Benjamin Button",
+    "doctor": "Denis",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "Reversed growth",
+    "paymentMethod": "Visa",
+    "status": "Not confirmed",
+    "included": []
+  },
+  {
+    "avatarPatient": "",
+    "id": 4,
+    "patient": "Batman",
+    "doctor": "Denis",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "Jokermania",
+    "paymentMethod": "Master card",
+    "status": "Rejected",
+    "included": []
+  },
+  {
+    "avatarPatient": "",
+    "id": 8,
+    "patient": "Joker",
+    "doctor": "Denis",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "Batmanhater",
+    "paymentMethod": "Contract",
+    "status": "Cancelled",
+    "included": []
+  },
+  {
+    "avatarPatient": "",
+    "id": 9,
+    "patient": "Katya Sambuca",
+    "doctor": "Denis",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "-",
+    "paymentMethod": "Contract",
+    "status": "Cancelled",
+    "included": []
+  },
+  {
+    "avatarPatient": "",
+    "id": 10,
+    "patient": "Blabla",
+    "doctor": "Denis",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "-",
+    "paymentMethod": "Contract",
+    "status": "Not paid",
+    "included": []
+  }
+]

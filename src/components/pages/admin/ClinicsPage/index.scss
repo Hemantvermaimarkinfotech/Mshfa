@@ -1,0 +1,73 @@
+@import 'src/styles/variables';
+
+.doctors-page {
+  .page-actions {
+    button {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .search-input {
+      width: 400px;
+      svg {
+        margin-right: 5px;
+      }
+      &__input {
+        width: 300px;
+      }
+    }
+  }
+}
+
+.add-medicine-modal {
+  .primary-button {
+    width: 110px;
+  }
+
+  .search-input {
+    width: 294px;
+    &__input {
+      flex-basis: 90%;
+    }
+  }
+
+  .table {
+    .MuiDataGrid-row {
+      cursor: pointer;
+    }
+  }
+}
+.select-doctor-type-modal {
+  width: 454px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .description {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $brand_color_grey_dark;
+  }
+  &--radio-group {
+    margin-bottom: 25px;
+    label {
+      margin: 5px 0
+    }
+  }
+  &--buttons {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    button {
+      width: 120px;
+      margin-bottom: 10px;
+      &.neutral-button {
+        margin-right: 10px;
+      }
+      &.neutral-button, &.primary-button {
+        padding: 8px;
+      }
+    }
+  }
+}

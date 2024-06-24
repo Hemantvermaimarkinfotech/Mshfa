@@ -1,0 +1,13 @@
+.patients-page {
+  .search-input {
+    width: 430px;
+    &__input {
+      flex-basis: 90%;
+    }
+  }
+  .table {
+    .MuiDataGrid-row {
+      cursor: pointer;
+    }
+  }
+}

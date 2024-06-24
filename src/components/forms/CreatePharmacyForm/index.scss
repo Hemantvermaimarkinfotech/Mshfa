@@ -1,0 +1,71 @@
+@import "src/styles/variables";
+
+.create-pharmacy-form {
+  &__header {
+    border-bottom: 1px solid $brand_color_grey;
+    padding: 14px 24px;
+  }
+  &__body {
+    padding: 32px 24px;
+  }
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 24px;
+    button {
+      width: 92px;
+    }
+  }
+  &__row {
+    display: flex;
+    margin-bottom: 32px;
+    align-items: center;
+    &--twin {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+      .text-field, .select-input, .autocomplete-input {
+        width: 329px;
+      }
+    }
+    &.delivery {
+      justify-content: space-between;
+      .delivery-time-input {
+        width: 262px;
+      }
+      .text-field {
+        width: 186px;
+      }
+    }
+  }
+
+  &__divider {
+    margin: 32px 0;
+    height: 1px;
+    background-color: #ccc;
+  }
+
+  .titled-block {
+    width: 100%;
+    .checkbox-field {
+      margin-top: 24px;
+    }
+  }
+
+  .photo-uploader {
+    margin-bottom: 32px;
+  }
+
+
+  .select-input {
+    .MuiInputBase-root {
+      border-radius: 3px;
+    }
+  }
+
+  .neutral-button {
+    margin-right: 24px;
+  }
+
+}

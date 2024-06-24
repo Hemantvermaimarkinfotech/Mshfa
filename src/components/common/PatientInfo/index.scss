@@ -1,0 +1,41 @@
+@import "src/styles/variables";
+
+.patient-info {
+  padding: 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  & > * {
+    margin-bottom: 48px;
+    &.patient-edit-button   {
+      display: flex;
+      align-self: flex-end;
+      background-color: $brand_color;
+      color: $brand_color_white;
+      padding: 6px 11px;
+      margin-bottom: -20px;
+      .edit-icon {
+        margin-right: 5px;
+      }
+    }
+
+  }
+  &__row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    & > * {
+      flex-basis: 25%;
+    }
+    &--wide {
+      & > * {
+        flex-basis: 100%;
+      }
+    }
+  }
+}

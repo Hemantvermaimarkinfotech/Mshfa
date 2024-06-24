@@ -1,0 +1,44 @@
+@import "src/styles/variables";
+
+.status-bar {
+  display: flex;
+  align-items: center;
+  margin: 0px -4px;
+  & > * {
+    margin: 0 4px;
+  }
+
+  &__indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  &__text {
+    font-size: 14px;
+  }
+  &--success {
+    color: $status_success;
+    .status-bar__indicator {
+      background-color: $status_success;
+    }
+  }
+  &--normal {
+    color: $status_normal;
+    .status-bar__indicator {
+      background-color: $status_normal;
+    }
+  }
+  &--warn {
+    color: $status_warn;
+    .status-bar__indicator {
+      background-color: $status_warn;
+    }
+  }
+  &--fail {
+    color: $status_fail;
+    .status-bar__indicator {
+      background-color: $status_fail;
+    }
+  }
+}

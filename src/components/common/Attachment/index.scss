@@ -1,0 +1,86 @@
+@import "src/styles/variables";
+
+.attachment {
+  display: flex;
+  border: 1px solid $brand_color_grey_lighter;
+  border-radius: 3px;
+  min-height: 51px;
+  a.attachment__name {
+    text-decoration: none;
+    color: $brand_color_black;
+  }
+  &--readonly {
+    .attachment__name {
+      margin-bottom: 0;
+    }
+  }
+  &__created {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: $brand_color_grey_dark;
+  }
+  &--completed {
+    .attachment__status {
+      color: $brand_color_green
+    }
+  }
+  &__body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: stretch;
+  }
+  &__image {
+    cursor: pointer;
+    width: 45px;
+    border-right: 1px solid $brand_color_grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .MuiSvgIcon-root {
+      color: rgb(244, 248, 252);
+      width: 90%;
+      height: 100%;
+    }
+  }
+  &__icon {
+    width: 25px;
+    height: 32px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 12px;
+  }
+  &__name {
+    font-size: 15px;
+    line-height: 18px;
+    font-family: "Roboto-Medium";
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+
+  }
+  &__status {
+    font-size: 11px;
+    color: $brand_color_grey;
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .MuiSvgIcon-root {
+      color: $brand_color_grey;
+      width: 35px;
+      height: 30px;
+      &:hover {
+        color: $brand_color;
+      }
+    }
+  }
+}

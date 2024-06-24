@@ -1,0 +1,74 @@
+@import 'src/styles/variables';
+
+.medications {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+    .page-actions {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      .primary-button {
+        width: 180px;
+      }
+      .secondary-button {
+        width: 40px;
+      }
+      .search-input {
+        width: 330px;
+        &__input {
+          flex-basis: 90%;
+        }
+      }
+    }
+  }
+  .table {
+    .MuiDataGrid-root {
+      background-color: #fff;
+    }
+    .MuiDataGrid-columnsContainer {
+      background-color: rgb(252, 253, 254);
+    }
+  }
+  &--empty-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    .description {
+      color: $brand_color_grey;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      margin-top: 24px;
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      width: 500px;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      margin-top: 24px;
+      .divider {
+        text-transform: uppercase;
+        color: $brand_color_grey;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+      }
+      button {
+        width: 210px;
+      }
+    }
+  }
+}
+

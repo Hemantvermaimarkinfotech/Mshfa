@@ -1,0 +1,168 @@
+@import 'src/styles/variables';
+
+.patient-profile-page {
+  a {
+    color: $brand_color;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  &__body {
+    display: flex;
+    justify-content: stretch;
+    height: 798px;
+  }
+  &__sidebar {
+    width: 326px;
+    margin-right: 24px;
+    background-color: #fff;
+    padding: 58px 24px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  &__content {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    .MuiButtonBase-root {
+      min-width: auto;
+      padding: 16px 20px;
+    }
+  }
+  &__appointments {
+    border-bottom: 1px solid $brand_color_grey;
+  }
+  .secondary-button {
+    border-color: $brand_color_grey;
+    color: $brand_color_black;
+  }
+  [class$='-button'] {
+    width: 102px;
+  }
+  .profile-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    &__avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 18px;
+    }
+
+    &__name {
+      color: $brand-color_black;
+      margin-bottom: 6px;
+    }
+
+    &__id {
+      color: $brand-color_grey;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    &__desc {
+      font-size: 14px;
+      color: $brand-color_grey;
+    }
+
+    .titled-text {
+      margin-bottom: 24px;
+    }
+  }
+  .profile-info {
+    &__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      & > * {
+        flex-basis: 33%;
+      }
+    }
+    &__certificate {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      margin-bottom: 40px;
+      font-family: 'Roboto-Light';
+      .MuiSvgIcon-root {
+        color: $brand_color_green;
+        margin-right: 8px;
+        font-size: 22px;
+      }
+    }
+    &__text {
+      font-size: 16px;
+      font-family: 'Roboto-Light';
+      color: $brand_color_black;
+    }
+
+    &--professional {
+      .table {
+        .MuiDataGrid-root {
+          border: none;
+          .MuiDataGrid-columnsContainer {
+            background-color: transparent;
+          }
+          .MuiDataGrid-colCell, .MuiDataGrid-cell {
+            padding: 0;
+            font-size: 16px;
+          }
+          .MuiDataGrid-cell {
+            font-size: 16px;
+          }
+          .MuiDataGrid-colCellTitle {
+            color: $brand_color_grey;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    &--appointments {
+      .profile-info__header {
+        justify-content: flex-end;
+        & > * {
+          flex-basis: auto;
+          margin-left: 24px;
+        }
+      }
+      .table {
+        .MuiDataGrid-root {
+          background-color: #fff;
+        }
+        .MuiDataGrid-columnsContainer {
+          background-color: rgb(252, 253, 254);
+        }
+      }
+    }
+
+    .stamp {
+      display: flex;
+      align-items: center;
+      &__image {
+        margin-right: 12px;
+      }
+      &__text {
+        font-size: 16px;
+        color: $brand_color_grey;
+        font-family: 'Roboto-Light';
+      }
+    }
+
+    .titled-block {
+      margin-bottom: 40px;
+    }
+
+    .titled-text {
+      &__title {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

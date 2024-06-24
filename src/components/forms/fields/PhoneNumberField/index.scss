@@ -1,0 +1,35 @@
+@import "../../../../styles/variables";
+
+.phones-field {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  &__row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__close {
+    cursor: pointer;
+    &.MuiSvgIcon-root {
+      color: $brand_color_grey;
+      font-size: 30px;
+      &:hover {
+        color: $brand_color;
+      }
+    }
+  }
+
+  .phones-field__row {
+    .text-field {
+      width: 329px;
+    }
+    .phone-number-primary {
+      padding-left: 5px;
+      color: $brand_color_grey;
+
+    }
+  }
+}

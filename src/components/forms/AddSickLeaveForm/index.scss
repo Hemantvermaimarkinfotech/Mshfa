@@ -1,0 +1,19 @@
+.add-sick-leave-form {
+  width: 752px;
+  &__row {
+    margin-bottom: 24px;
+    display: flex;
+  }
+  .select-input {
+    width: 316px;
+    .MuiInputBase-root {
+      border-radius: 4px;
+    }
+  }
+  .date-input {
+    margin-right: 24px;
+    .MuiFormControl-root {
+      width: 316px;
+    }
+  }
+}

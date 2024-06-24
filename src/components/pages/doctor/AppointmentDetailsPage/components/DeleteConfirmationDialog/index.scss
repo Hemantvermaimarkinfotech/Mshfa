@@ -1,0 +1,8 @@
+@import "src/styles/variables";
+
+.delete-confirmation-dialog {
+  &__display {
+    font-size: 17px;
+    color: $brand_color_black;
+  }
+}

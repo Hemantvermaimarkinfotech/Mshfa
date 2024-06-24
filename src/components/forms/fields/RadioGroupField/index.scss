@@ -1,0 +1,17 @@
+@import "src/styles/variables";
+
+.radio-group-field {
+  .MuiFormGroup-root {
+    flex-direction: row;
+  }
+  .PrivateSwitchBase-root-5 {
+    padding: 0 9px;
+  }
+  .MuiFormControlLabel-label {
+    font-size: 15px;
+  }
+}
+
+.MuiRadio-colorPrimary.Mui-checked {
+  color: $brand_color !important;
+}

@@ -1,0 +1,42 @@
+@import 'src/styles/variables';
+
+.add-pharmacist-modal {
+  width: 454px;
+  height: 626px;
+  display: flex;
+  flex-direction: column;
+  .description {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $brand_color_grey_dark;
+    margin-bottom: 32px;
+  }
+  &__row {
+    margin-bottom: 24px;
+  }
+  form {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  &--buttons {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+    button {
+      display: flex;
+      width: 120px;
+      &.neutral-button {
+        margin-right: 10px;
+      }
+      &.neutral-button, &.primary-button {
+        padding: 8px;
+      }
+    }
+  }
+}

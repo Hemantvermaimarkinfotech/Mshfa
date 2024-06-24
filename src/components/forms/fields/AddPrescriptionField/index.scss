@@ -1,0 +1,38 @@
+@import "src/styles/variables";
+
+.add-prescription-field {
+  border: 1px solid $brand_color_grey_lighter;
+  padding: 20px 16px;
+  margin-bottom: 24px;
+  &__title {
+    font-size: 15px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    .MuiSvgIcon-root {
+      color: $brand_color_grey;
+      cursor: pointer;
+      &:hover {
+        color: $brand_color
+      }
+    }
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .autocomplete-input {
+      margin-right: 16px;
+      width: 229px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

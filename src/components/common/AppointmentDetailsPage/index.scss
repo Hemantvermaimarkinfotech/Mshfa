@@ -1,0 +1,95 @@
+@import 'src/styles/variables';
+
+.admin-appointment-page {
+  width: 892px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 80vh;
+
+  &__header {
+    padding: 0 24px 24px;
+  }
+
+  &__body {
+    display: flex;
+    flex-grow: 1;
+    .tabs__panel {
+      padding: 0 24px;
+      background-color: $brand_color_grey_light;
+      .MuiTab-fullWidth {
+        color: $brand_color_grey_dark;
+        flex-basis: auto;
+        &.Mui-selected {
+          color: $brand_color;
+        }
+      }
+    }
+  }
+  .patient-attachments-list {
+    .attachment {
+      margin-bottom: 12px;
+    }
+  }
+
+  .appointment-general {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    align-items: stretch;
+    .more-btn {
+      border: 1px solid $brand_color_grey_lighter;
+      border-radius: 3px;
+      width: 38px;
+      height: 38px;
+      margin: 0;
+      padding: 0;
+    }
+    &__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &.profile {
+        justify-content: space-around;
+      }
+    }
+    &__group {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0 -6px;
+      & > * {
+        margin: 0 6px;
+      }
+    }
+    &__avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    &__name {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    &__caption {
+      font-size: 13px;
+      color: $brand_color_grey;
+    }
+    &__title {
+      font-size: 12px;
+      color: $brand_color_grey;
+      margin-bottom: 5px;
+    }
+    &__value {
+      font-size: 16px;
+    }
+  }
+  .break-through {
+    text-decoration: line-through;
+    text-decoration-thickness: 0.5px;
+  }
+  .cell__discount {
+    color: #ff9f2e;
+  }
+}

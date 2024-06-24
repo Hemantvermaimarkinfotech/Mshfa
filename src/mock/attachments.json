@@ -1,0 +1,72 @@
+[
+  {
+    "id": 0,
+    "uploadedBy": {
+      "firstName": "Dan",
+      "lastName": "Brown",
+      "avatar": ""
+    },
+    "date": "02.03, 12:02:22",
+    "filename": "Invoice_5849146_190820.pdf"
+  },
+  {
+    "id": 1,
+    "uploadedBy": {
+      "firstName": "Mila",
+      "lastName": "Yovovich",
+      "avatar": ""
+    },
+    "date": "02.03, 12:02:22",
+    "filename": "LAB-01-588-Blood-CA2.jpg"
+  },
+  {
+    "id": 2,
+    "uploadedBy": {
+      "firstName": "Joker",
+      "lastName": "Solid",
+      "avatar": ""
+    },
+    "date": "02.03, 12:02:22",
+    "filename": "LAB-01-5874-Blood-2A2.png"
+  },
+  {
+    "id": 3,
+    "uploadedBy": {
+      "firstName": "Dan",
+      "lastName": "Brown",
+      "avatar": ""
+    },
+    "date": "02.03, 12:02:22",
+    "filename": "LAB-05-12445574-Blood-2A2.pdf"
+  },
+  {
+    "id": 4,
+    "uploadedBy": {
+      "firstName": "Batman",
+      "lastName": "Robin",
+      "avatar": ""
+    },
+    "date": "02.03, 12:02:22",
+    "filename": "LAB-01-5874-Blood-2A2.jpg"
+  },
+  {
+    "id": 5,
+    "uploadedBy": {
+      "firstName": "Benjamin",
+      "lastName": "Button",
+      "avatar": ""
+    },
+    "date": "02.03, 12:02:22",
+    "filename": "Invoice_5849146_190820.pdf"
+  },
+  {
+    "id": 6,
+    "uploadedBy": {
+      "firstName": "Katya",
+      "lastName": "Sambuca",
+      "avatar": ""
+    },
+    "date": "02.03, 12:02:22",
+    "filename": "Invoice_5849146_190820.pdf"
+  }
+]

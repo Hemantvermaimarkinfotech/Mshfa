@@ -1,0 +1,39 @@
+@import "src/styles/variables";
+
+.tests {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  .tests__header {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      width: 320px;
+      height: 40px;
+      padding: 0;
+      border: 1px solid $brand_color;
+      color: $brand_color;
+      &:active {
+        border: 1px solid $brand_color;
+      }
+    }
+  }
+  &__content {
+    padding: 24px 0;
+    .attachment {
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .global-message {
+    margin-top: 150px;
+  }
+  .global-loader {
+    height: auto;
+  }
+}
+
+

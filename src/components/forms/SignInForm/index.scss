@@ -1,0 +1,30 @@
+@import 'src/styles/variables';
+
+.sign-in-form {
+  &__checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__link {
+    color: $brand_color;
+    text-decoration: none;
+  }
+
+  &__form {
+    & > .text-field {
+      margin-bottom: 44px;
+    }
+    & > .password-field {
+      margin-bottom: 32px;
+    }
+  }
+  .auth-form {
+    padding: 64px 24px 24px;
+  }
+
+  .text-button {
+    padding: 6px;
+  }
+}

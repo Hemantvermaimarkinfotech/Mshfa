@@ -1,0 +1,15 @@
+@import "../../../styles/variables";
+
+.title-block {
+  display: flex;
+  justify-content: space-between;
+  .verified-title {
+    line-height: 15px;
+    display: flex;
+    .MuiSvgIcon-root {
+      color: #2DAD70;
+      margin-right: 8px;
+      font-size: 14px;
+    }
+  }
+}

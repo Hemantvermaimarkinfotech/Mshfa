@@ -1,0 +1,54 @@
+@import "src/styles/variables";
+
+
+.picture-field {
+  padding: 17px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 0;
+  .preview {
+    width: 128px;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid $brand_color_grey_lighter;
+    border-radius: 3px;
+    .close-icon {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      width: 24px;
+      height: 24px;
+    }
+    img {
+      max-width: 126px;
+      max-height: 126px;
+    }
+  }
+  .dropzone {
+    border: 1px dashed $brand_color_grey_lighter;
+    cursor: pointer;
+    border-radius: 3px;
+    &:hover {
+      border-color: $brand_color_grey;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 7px;
+    }
+    &__caption {
+      font-size: 12px;
+      color: $brand_color_grey;
+    }
+    &__link {
+      color: $brand_color;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

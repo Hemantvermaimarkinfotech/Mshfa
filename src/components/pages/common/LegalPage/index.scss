@@ -1,0 +1,38 @@
+@import "src/styles/variables";
+
+.legal-page {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background-color: transparent;
+  justify-content: center;
+  flex-direction: row;
+  .paper {
+    width: 50%;
+  }
+  .tabs {
+    &__panel {
+      border-bottom: 1px solid #E2E8F0;
+    }
+    &__content {
+      background-color: #fff;
+    }
+    .MuiTabs-root {
+      margin-bottom: -1px;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 20px 0;
+    font-family: 'Roboto-Bold';
+  }
+  p {
+    margin: 15px 0 !important;
+    text-align: justify;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  td {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,139 @@
+@import "src/styles/variables";
+
+.create-coupon-form {
+  &__header {
+    border-bottom: 1px solid $brand_color_grey;
+    padding: 14px 24px;
+  }
+  &__body {
+    padding: 24px;
+    .users-values {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px -5px;
+      .MuiChip-root {
+        margin: 4px 5px;
+        background: #f9f9fa;
+        border: 1px solid #dcdedf;
+        border-radius: 20px;
+        .MuiChip-label {
+          line-height: 24px;
+        }
+      }
+    }
+    .create-coupon-form__row {
+      justify-content: space-between;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .radio-group-field .MuiFormGroup-root {
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 24px;
+    margin: 0 -12px;
+    & > button {
+      margin: 0 12px;
+    }
+  }
+  &__row {
+    display: flex;
+    margin-bottom: 12px;
+    align-items: center;
+    &--twin {
+      justify-content: space-between;
+      .text-field,
+      .date-input {
+        max-width: 200px !important;
+        background-color: blue;
+      }
+      .select-input .MuiFormControl-root {
+        max-width: 100px !important;
+      }
+      .date-input {
+        .MuiInputBase-root {
+          height: 44px;
+        }
+        .MuiFormLabel-root {
+          transform: translate(14px, 14px) scale(1);
+        }
+      }
+      // &.amount-field {
+      //   padding: 12px 0;
+      // }
+    }
+    &.days-off {
+      flex-direction: column;
+      align-items: flex-start;
+      .date-input {
+        .MuiTextField-root.input-wide {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  &__divider {
+    margin: 32px 0;
+    height: 1px;
+    background-color: #ccc;
+  }
+
+  .titled-block {
+    width: 100%;
+    .checkbox-field {
+      margin-top: 0px;
+    }
+  }
+
+  .preferences-select {
+    .checkbox-field {
+      margin-top: 0px;
+    }
+  }
+
+  .select-input-coupon {
+    .MuiInputBase-root {
+      border-radius: 3px;
+    }
+  }
+
+  .secondary-button {
+    padding: 9.5px 7px;
+  }
+
+  .neutral-button,
+  .primary-button {
+    padding: 11px 23px;
+  }
+}
+
+.preferences-field {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  align-items: center;
+  .preferences-select {
+    .checkbox-field {
+      margin-top: 0px;
+    }
+  }
+}
+
+.openTo-field__row{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 5px;
+  justify-content: space-between;
+  .select-input {
+    width: 250px !important;
+  }
+}

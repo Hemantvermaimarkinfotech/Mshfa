@@ -1,0 +1,53 @@
+@import 'src/styles/variables';
+
+.medications-page {
+  &__body {
+    display: flex;
+    justify-content: stretch;
+    height: 680px;
+  }
+  &__sidebar {
+    width: 453px;
+    background-color: #fff;
+    margin-right: 24px;
+    .pharmacy-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      border-bottom: 1px solid $brand_color_grey_lighter;
+      cursor: pointer;
+      &__selected {
+        cursor: default;
+        background-color: $brand_color_grey_light;
+      }
+      &__content {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+      }
+      &__text {
+        line-height: 24px;
+      }
+      &__label {
+        color: $brand_color_grey_dark;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      &__image {
+        cursor: pointer;
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__content {
+    width: 100%;
+    background-color: #fff;
+  }
+  &__modal {
+    width: 454px;
+  }
+}

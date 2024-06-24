@@ -1,0 +1,56 @@
+/*----------------------------------------------------------------------------------------------------------------------
+Paths
+----------------------------------------------------------------------------------------------------------------------*/
+
+$path_fonts: "../assets/fonts";
+
+/*----------------------------------------------------------------------------------------------------------------------
+  Fonts
+----------------------------------------------------------------------------------------------------------------------*/
+
+// Roboto
+
+$font_name: "Roboto";
+
+$Roboto-Thin: "Roboto-Thin";
+$Roboto-Thin-Italic: "Roboto-ThinItalic";
+
+$Roboto-Light: "Roboto-Light";
+$Roboto-Light-Italic: "Roboto-LightItalic";
+
+$Roboto-Medium: "Roboto-Medium";
+$Roboto-Medium-Italic: "Roboto-MediumItalic";
+
+$Roboto-Regular: "Roboto-Regular";
+
+$Roboto-Bold: "Roboto-Bold";
+$Roboto-Bold-Italic: "Roboto-BoldItalic";
+
+$Roboto-Black: "Roboto-Black";
+$Roboto-Black-Italic: "Roboto-BlackItalic";
+
+$fonts: (
+        $Roboto-Thin,
+        $Roboto-Thin-Italic,
+        $Roboto-Light,
+        $Roboto-Light-Italic,
+        $Roboto-Medium,
+        $Roboto-Medium-Italic,
+        $Roboto-Regular,
+        $Roboto-Bold,
+        $Roboto-Bold-Italic,
+        $Roboto-Black,
+        $Roboto-Black-Italic
+);
+
+@each $font in $fonts {
+  @font-face {
+    font-family: $font;
+    src: url('#{$path_fonts}/#{$font_name}/#{$font}.ttf') format('truetype');
+    //src: url('#{$path_fonts}/#{$font}/#{$font}.eot?#iefix') format('embedded-opentype'),
+    //url('#{$path_fonts}/#{$font}/#{$font}.woff') format('woff'),
+    //url('#{$path_fonts}/#{$font}/#{$font}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}

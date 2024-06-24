@@ -1,0 +1,48 @@
+@import 'src/styles/variables';
+
+.MuiDialogContent-root {
+  &.dialog-content-style {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .delivery-order-popup {
+    width: 454px;
+    max-height: 550px;
+    display: flex;
+    flex-direction: column;
+    &__content {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      .text-field {
+        height: 48px;
+        padding-left: 30px;
+      }
+    }
+    .timeslot-select {
+      margin-top: 24px;
+      .date-input {
+        .MuiFormControl-root {
+          width: 100%;
+        }
+      }
+    }
+    .select-input {
+      margin-top: 17px;
+      width: 100%;
+
+      .MuiOutlinedInput-notchedOutline {
+        border-radius: 4px;
+      }
+    }
+    &__buttons {
+      display: flex;
+      justify-content: flex-end;
+      height: 48px;
+      margin: 20px 0;
+      .neutral-button {
+        margin-right: 10px;
+      }
+    }
+  }
+}

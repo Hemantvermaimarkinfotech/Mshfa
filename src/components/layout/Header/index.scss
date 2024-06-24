@@ -1,0 +1,194 @@
+@import "src/styles/variables";
+
+.header {
+  background-color: $brand_color;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+
+  &-admin {
+    .header__right {
+      padding: 25px 32px;
+    }
+  }
+
+  &__navigation {
+    margin: 0 -10px -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 32px;
+    flex-basis: 100%;
+  }
+  &__right {
+    background-color: $brand_color_dark;
+    display: flex;
+    align-items: center;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__profile {
+    width: 100%;
+    height: 100%;
+    padding: 20px 28px;
+  }
+
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    & > * {
+      margin-right: 25px !important;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+    opacity: 0.5;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: .2s;
+    margin: 0 20px 15px;
+    &:hover {
+      opacity: .8;
+    }
+    &--active {
+      opacity: 1;
+      &:after {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &__icon {
+    color: #fff;
+    cursor: pointer;
+  }
+  .call {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    color: #fff;
+    &__icon {
+      margin: 0 7px;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    &__title {
+      opacity: 0.5;
+      font-size: 12px;
+    }
+  }
+  .work-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: .5px solid #6585CB;
+    border-radius: 5px;
+    margin-right: 32px;
+    cursor: pointer;
+    &:hover {
+      border-color: #8fa8e5;
+    }
+    &__left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid #6585CB;
+      padding: 3px 7px;
+      .MuiSvgIcon-root {
+        color: $brand_color_white;
+      }
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $brand_color_white;
+      white-space: nowrap;
+      font-size: 14px;
+      font-weight: 100;
+      padding: 3px 10px;
+    }
+    &__title {
+      font-weight: 300;
+      margin-right: 5px;
+      font-family: 'Roboto-Light';
+    }
+    &__value {
+      font-weight: 700;
+      font-family: 'Roboto-Regular';
+    }
+  }
+  .profile {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      margin: 0 4px;
+    }
+    &__avatar {
+      width: 40px;
+      height: 40px;
+      margin: 0 4px;
+      border-radius: 50%;
+    }
+    &__name {
+      font-size: 14px;
+      width: 120px;
+      margin-bottom: 4px;
+    }
+    &__role {
+      opacity: 0.5;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    &__icon {
+      cursor: pointer;
+    }
+  }
+  .notifications {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    &__icon {
+      cursor: pointer;
+    }
+  }
+  &__logo-outer {
+    display: flex;
+    align-items: flex-start;
+    width: 226px;
+  }
+  .logo {
+    width: 146px;
+  }
+}

@@ -1,0 +1,25 @@
+.order-patient-info {
+    .order-user {
+        display: flex;
+        align-items: center;
+        .user-avatar {
+            width: 36px;
+            height: 36px;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+        .user-name {
+            font-family: "Roboto-Medium";
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.44px;
+        }
+
+    }
+    .titled-text {
+        &__text {
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,247 @@
+@import "src/styles/variables";
+
+.table {
+  .hidden {
+    display: none;
+  }
+
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .cell__text {
+      line-height: 24px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+    .break-through {
+      text-decoration: line-through;
+      text-decoration-thickness: 0.5px;
+    }
+    .cell__text:hover {
+      text-overflow: clip;
+      white-space: normal;
+      word-break: break-all;
+    }
+    .cell__discount {
+      color: #ff9f2e;
+    }
+    &:hover {
+      .cell__text {
+        text-overflow: clip;
+        white-space: normal;
+        word-break: normal;
+      }
+    }
+
+    .cell__label {
+      color: #ff9f2e;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &--clickable {
+      cursor: pointer;
+    }
+
+    &--with-text {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &--with-image {
+      overflow: hidden;
+      margin: 0 -4px;
+
+      .cell__image-outer {
+        width: 24px;
+        height: 24px;
+        margin: 0 4px;
+        border-radius: 50%;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+
+        .cell__image {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+
+      .cell__text {
+        margin: 0 4px;
+      }
+    }
+
+    &--with-status {
+      .status-bar {
+        &__text {
+          text-overflow: fade;
+          //white-space: nowrap;
+          //overflow: hidden;
+        }
+      }
+    }
+
+    &--file-link {
+      cursor: pointer;
+      color: $brand_color;
+    }
+    &--clinic-image {
+      width: 40px;
+    }
+
+
+    &--with-url {
+      .cell__url {
+        cursor: pointer;
+        color: $brand_color;
+      }
+    }
+
+    &--with-icons-set {
+      .cell__icon {
+        margin-right: 20px;
+      }
+
+      .cell--with-actions {
+        button {
+          height: 36px;
+        }
+      }
+    }
+
+    &--refund {
+      width: 65px;
+
+      .cell__text {
+        color: red;
+      }
+      
+      
+
+      .cell__image {
+        width: 10px;
+        height: 10px;
+        margin-left: 5px;
+      }
+    }
+
+    &--with-label {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .cell__url--pdf {
+      color: $brand_color;
+    }
+
+    &--with-actions {
+      justify-content: flex-end;
+
+      .neutral-button {
+        background-color: $brand_color_grey_light;
+        height: 40px;
+        margin-right: 12px;
+        color: $brand_color_grey_dark;
+        font-size: 16px;
+        letter-spacing: 0.15px;
+      }
+
+      .primary-button {
+        height: 40px;
+        width: 92px;
+        margin-right: 24px;
+        font-size: 16px;
+        letter-spacing: 0.15px;
+      }
+    }
+
+    &--number {
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: button;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        width: 78px;
+        margin: 0 0 0 4px;
+        text-align: end;
+        -moz-appearance: button;
+      }
+    }
+
+    .prescription-preview-block {
+      height: 40px;
+      display: flex;
+      border: 1px solid $brand_color_grey_lighter;
+      border-radius: 3px;
+      flex-direction: row;
+
+      &__border {
+        border-right: 1px solid $brand_color_grey_lighter;
+      }
+
+      &__preview {
+        display: flex;
+        padding: 0 12px;
+        align-items: center;
+        justify-content: center;
+        font-family: "Roboto-Medium";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: $brand_color;
+        cursor: pointer;
+      }
+
+      &__print {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        flex: 0 0 auto;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .MuiLinearProgress-barColorPrimary-23 {
+    background-color: $brand_color;
+  }
+
+  .MuiLinearProgress-colorPrimary {
+    background-color: $brand_color_grey_light;
+
+    .MuiLinearProgress-bar {
+      background-color: #531d8b;
+      height: 3px;
+    }
+  }
+
+  .MuiDataGrid-root .MuiDataGrid-cellLeft {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .MuiDataGrid-iconSeparator {
+    display: none;
+  }
+
+  .MuiDataGrid-columnsContainer,
+  .MuiDataGrid-footer,
+  .MuiTablePagination-root {
+    background-color: $brand_color_grey_light;
+  }
+}

@@ -1,0 +1,34 @@
+@import 'src/styles/variables';
+
+.secondary-button {
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid $brand_color;
+  appearance: none;
+  color: $brand_color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 24px;
+  padding: 7px 2px;
+  transition: .2s ease;
+
+  &:active, &:hover {
+    background-color: #F4F8FD;
+    border: 1px solid $brand_color;
+  }
+  >span {
+    margin: 0 5px;
+  }
+  img, svg {
+    margin: 0 5px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &:disabled {
+    border-color: $brand_color_grey;
+    color: $brand_color_grey;
+  }
+}

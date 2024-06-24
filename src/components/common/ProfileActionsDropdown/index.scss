@@ -1,0 +1,45 @@
+@import "src/styles/variables";
+
+.profile-actions-dropdown {
+  padding: 8px 0;
+  width: 240px;
+  &__item {
+    margin: 0 -9px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 13px 22px;
+    width: 100%;
+    .MuiIconButton-root {
+      padding: 0;
+      width: 18px;
+      height: 18px;
+    }
+    &:hover {
+      background-color: $brand_color_grey_light;
+    }
+  }
+  &__text {
+    margin: 0 9px;
+    line-height: 18px;
+  }
+
+  button {
+    margin: 0 9px;
+    cursor: pointer;
+    color: $brand_color_grey;
+    font-size: 16px;
+  }
+
+  &__link {
+    display: flex;
+    font-size: 16px;
+  }
+
+  &__icon {
+    margin: 0 9px;
+    &--logout {
+      color: $brand_color_grey;
+    }
+  }
+}

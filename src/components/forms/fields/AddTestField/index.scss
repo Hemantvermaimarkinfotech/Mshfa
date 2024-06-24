@@ -1,0 +1,20 @@
+@import "src/styles/variables";
+
+.add-test-field {
+  border: 1px solid $brand_color_grey_lighter;
+  padding: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__title {
+    font-size: 15px;
+  }
+  .MuiSvgIcon-root {
+    color: $brand_color_grey;
+    cursor: pointer;
+    &:hover {
+      color: $brand_color
+    }
+  }
+}

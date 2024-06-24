@@ -1,0 +1,21 @@
+
+.payments {
+  display: flex;
+  flex-direction: column;
+
+  .page-actions {
+    .select-input {
+      width: 233px;
+      margin-right: 24px;
+    }
+  }
+  .table {
+    .MuiDataGrid-root {
+      background-color: #fff;
+    }
+    .MuiDataGrid-columnsContainer {
+      background-color: rgb(252, 253, 254);
+    }
+  }
+}
+

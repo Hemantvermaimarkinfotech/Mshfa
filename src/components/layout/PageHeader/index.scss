@@ -1,0 +1,11 @@
+.page {
+  & > .page-header {
+    padding: 32px 0 0;
+  }
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}

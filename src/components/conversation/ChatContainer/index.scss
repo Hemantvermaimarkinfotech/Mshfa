@@ -1,0 +1,43 @@
+@import "src/styles/variables";
+
+.chat-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  justify-content: stretch;
+  align-items: stretch;
+  overflow-y: hidden;
+  &__video-layout {
+    background-color: $brand_color_grey;
+  }
+  &__chats {
+    display: none;
+    visibility: hidden;
+    &--connected {
+      display: flex;
+      flex-direction: column;
+      visibility: visible;
+      justify-content: stretch;
+      flex-grow: 1;
+      overflow-y: hidden;
+    }
+  }
+  &__loader {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40%;
+    transform: translateY(50%);
+    width: 100%;
+    align-items: center;
+    &-text {
+      margin-top: 75px;
+      color: #454545;
+    }
+  }
+  .video-chat {
+    margin-bottom: 0;
+  }
+}

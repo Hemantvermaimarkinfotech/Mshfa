@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+
+.start-appointment-button {
+  background-color: $brand_color_green;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: none;
+  appearance: none;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 6px 0;
+  cursor: pointer;
+  transition: .2s ease;
+  &:hover {
+    background-color: $brand_color_green_dark;
+  }
+  &__icon {
+    margin-right: 9px;
+    width: 21px;
+    height: 21px;
+  }
+}

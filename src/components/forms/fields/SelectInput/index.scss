@@ -1,0 +1,84 @@
+@import 'src/styles/variables';
+
+.select-input {
+  width: 192px;
+
+  .input-value {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    .value {
+      line-height: 24px;
+    }
+    button {
+      padding: 0;
+    }
+  }
+
+  .MuiFormControl-root {
+    width: 100%;
+  }
+
+  .MuiFormLabel-root {
+    color: $brand_color_grey;
+    background-color: rgb(255, 255, 255);
+    padding: 0 4px;
+  }
+
+  .MuiInputLabel-outlined {
+    transform: translate(14px, 12px) scale(1);
+    &.MuiInputLabel-shrink {
+      transform: translate(14px, -6px) scale(0.75);
+    }
+  }
+
+
+  .MuiSelect-root {
+    display: flex;
+    align-items: center;
+    padding-top: unset;
+    padding-bottom: unset;
+    padding-right: 30px;
+    font-size: 15px;
+    text-align: left;
+  }
+  .MuiSelect-select:focus {
+    background-color: transparent;
+  }
+  .MuiSelect-selectMenu {
+    padding: 10px 32px 10px 10px;
+    min-height: 23.37px;
+  }
+  &.small {
+    .MuiSelect-selectMenu {
+      padding: 8.5px 32px 8.5px 10px;
+    }
+  }
+  .MuiInputBase-root {
+    border-radius: 0;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(38, 50, 56, .16);
+    border-radius: 4px;
+  }
+  .MuiOutlinedInput-root:hover > .MuiOutlinedInput-notchedOutline {
+    border-color: $brand_color;
+  }
+  .PrivateNotchedOutline-legendLabelled-3 {
+    font-size: 0.63em;
+  }
+  .MuiFormHelperText-root {
+    margin-left: 0;
+    position: absolute;
+    top: 40px;
+  }
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: $brand_color;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: $brand_color;
+}

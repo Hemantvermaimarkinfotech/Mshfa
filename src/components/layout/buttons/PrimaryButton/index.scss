@@ -1,0 +1,30 @@
+@import 'src/styles/variables';
+
+.primary-button {
+  background-color: $brand_color;
+  border-radius: 3px;
+  border: none;
+  appearance: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 24px;
+  padding: 8px 3px;
+  transition: .2s ease;
+  &:hover, &:active {
+    background-color: $brand_color_dark;
+  }
+  >span {
+    margin: 0 5px;
+  }
+  img, svg {
+    margin: 0 5px;
+    width: 24px;
+    height: 24px;
+  }
+  &:disabled {
+    background-color: #B9C2CC;
+  }
+}

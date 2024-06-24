@@ -1,0 +1,8 @@
+.tests-page {
+  .search-input {
+    width: 330px;
+    &__input {
+      flex-basis: 90%;
+    }
+  }
+}

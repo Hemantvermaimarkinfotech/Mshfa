@@ -1,0 +1,76 @@
+@import "src/styles/variables";
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  flex-grow: 1;
+  &--centered {
+    .MuiTabs-root {
+      width: 100%;
+    }
+    .tabs__panel {
+      .MuiTab-root.MuiTab-fullWidth {
+        flex-grow: 1;
+      }
+    }
+  }
+  &__panel {
+    display: flex;
+    flex-grow: 0;
+    background-color: #fff;
+    position: relative;
+    .MuiTabs-root {
+      flex-grow: 1;
+    }
+    .MuiTab-root {
+      text-transform: none;
+      padding: 16px 8px;
+      color: $brand_color_grey;
+      font-size: 14px;
+      line-height: 24px;
+      flex-grow: 0;
+      &.MuiTab-fullWidth {
+        flex-grow: 0;
+        flex-basis: auto;
+      }
+    }
+    .Mui-selected {
+      color: $brand_color;
+    }
+
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex-grow: 1;
+    margin: 24px;
+  }
+
+  .MuiTabs-indicator {
+    background-color: $brand_color_dark;
+  }
+
+  .MuiTabScrollButton-root {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #fff;
+    opacity: 1;
+    &:first-child {
+      box-shadow: -4px 0px 8px rgba(176, 190, 197, 0.24);
+      right: 40px;
+    }
+
+    &.Mui-disabled {
+      opacity: 1;
+      pointer-events: none;
+      .MuiSvgIcon-root {
+        fill: $brand_color_grey;
+      }
+    }
+  }
+}

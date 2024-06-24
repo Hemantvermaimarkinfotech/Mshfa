@@ -1,0 +1,18 @@
+.payments-page {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    .page-actions {
+      .search-input {
+        width: 380px;
+        &__input {
+          flex-basis: 90%;
+        }
+      }
+      .select-input {
+        width: 233px;
+      }
+    }
+  }
+}

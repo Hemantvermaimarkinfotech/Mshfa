@@ -1,0 +1,67 @@
+@import "src/styles/variables";
+
+.edit-profile-info-form {
+  width: 752px;
+  &__row {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    & > * {
+      margin-right: 24px !important;
+      &:last-child {
+        margin-right: 0 !important;
+      }
+    }
+    &--compact {
+      justify-content: flex-start;
+      .text-field {
+        width: auto;
+      }
+    }
+  }
+  &__autocomplete {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .select-input {
+    width: 100%;
+    .MuiInputBase-root {
+      border-radius: 4px;
+    }
+  }
+  .titled-block {
+    &__title {
+      color: $brand_color_grey_dark;
+    };
+  }
+  .MuiAutocomplete-root {
+    width: 100%;
+    .MuiOutlinedInput-notchedOutline {
+      border-color: rgba(38, 50, 56, .16);
+    }
+
+    .MuiFormLabel-root {
+      color: $brand_color_grey;
+    }
+
+    .MuiFormHelperText-root {
+      margin-left: 0;
+      position: absolute;
+      top: 40px;
+    }
+
+    .MuiOutlinedInput-root:hover > .MuiOutlinedInput-notchedOutline {
+      border-color: $brand_color;
+    }
+  }
+  .MuiChip-root {
+    margin: 4px 5px;
+    background: #F9F9FA;
+    border: 1px solid #DCDEDF;
+    border-radius: 3px;
+    .MuiChip-label {
+      line-height: 24px;
+    }
+  }
+}

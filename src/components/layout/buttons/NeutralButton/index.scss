@@ -1,0 +1,19 @@
+@import 'src/styles/variables';
+
+.neutral-button {
+  background-color: #E1E7EE;
+  border-radius: 3px;
+  border: none;
+  appearance: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px;
+  line-height: 24px;
+  transition: .2s ease;
+  &:active, &:hover {
+    background-color: $brand_color_grey;
+  }
+}

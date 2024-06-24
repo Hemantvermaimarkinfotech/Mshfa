@@ -1,0 +1,51 @@
+@import 'src/styles/variables';
+
+.pharmacy-profile-page {
+  &__body {
+    display: flex;
+    justify-content: stretch;
+    height: 798px;
+  }
+  &__sidebar {
+    width: 326px;
+    margin-right: 24px;
+    background-color: #fff;
+    padding: 0 24px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    background-color: #fff;
+    .MuiButtonBase-root {
+      min-width: auto;
+      padding: 16px 20px;
+    }
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: stretch;
+    }
+  }
+  &__tabs {
+    border-bottom: 1px solid $brand_color_grey;
+  }
+
+  .secondary-button {
+    border-color: $brand_color_grey;
+    color: $brand_color_black;
+    img {
+      margin-right: 5px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  [class$='-button'] {
+    width: 102px;
+  }
+}

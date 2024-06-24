@@ -1,0 +1,112 @@
+[
+  {
+    "avatarUrl": "",
+    "id": 0,
+    "patient": "Denis",
+    "uhi": "12421n3",
+    "date": "02.03, 12:02:22",
+    "diagnosis": "Cancer",
+    "status": "Confirmed",
+    "included": ["rx", "chat", "attachments", "lab-tests"]
+  },
+  {
+    "avatarUrl": "",
+    "id": 1,
+    "patient": "Alexey",
+    "uhi": "124213j",
+    "date": "02.03, 12:02:22",
+    "diagnosis": "Cancer 4 stage close to death",
+    "status": "Unresolved",
+    "included": ["rx", "chat", "lab-tests"]
+  },
+  {
+    "avatarUrl": "",
+    "id": 2,
+    "patient": "Blah",
+    "uhi": "052",
+    "date": "02.03, 12:02:22",
+    "diagnosis": "Flu",
+    "status": "In progress",
+    "included": ["rx", "chat", "attachments"]
+  },
+  {
+    "avatarUrl": "",
+    "id": 3,
+    "patient": "Anton",
+    "uhi": "05222",
+    "date": "02.03, 12:02:22",
+    "diagnosis": "Flu",
+    "status": "Resolved",
+    "included": ["chat", "attachments", "lab-tests"]
+  },
+  {
+    "avatarUrl": "",
+    "id": 5,
+    "patient": "Di Caprio",
+    "uhi": "052aaa",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "Flu",
+    "status": "Cancelled",
+    "included": ["rx"]
+  },
+  {
+    "avatarUrl": "",
+    "id": 6,
+    "patient": "Di Caprio Alonso",
+    "uhi": "052aaa",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "Flu",
+    "status": "Not paid",
+    "included": ["rx", "lab-tests"]
+  },
+  {
+    "avatarUrl": "",
+    "id": 7,
+    "patient": "Benjamin Button",
+    "uhi": "052aaa",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "Reversed growth",
+    "status": "Not confirmed",
+    "included": []
+  },
+  {
+    "avatarUrl": "",
+    "id": 4,
+    "patient": "Batman",
+    "uhi": "052aaa",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "Jokermania",
+    "status": "Rejected",
+    "included": []
+  },
+  {
+    "avatarUrl": "",
+    "id": 8,
+    "patient": "Joker",
+    "uhi": "052aaa",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "Batmanhater",
+    "status": "Cancelled",
+    "included": []
+  },
+  {
+    "avatarUrl": "",
+    "id": 9,
+    "patient": "Katya Sambuca",
+    "uhi": "052aaa",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "-",
+    "status": "Cancelled",
+    "included": []
+  },
+  {
+    "avatarUrl": "",
+    "id": 10,
+    "patient": "Blabla",
+    "uhi": "052aaa",
+    "date": "02.03, 12:02:12",
+    "diagnosis": "-",
+    "status": "Not paid",
+    "included": []
+  }
+]

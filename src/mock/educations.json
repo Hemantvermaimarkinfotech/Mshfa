@@ -1,0 +1,16 @@
+[
+  {
+    "id" : 0,
+    "place": "Medical Campus - Kuwait University",
+    "degree": "Bachelor",
+    "start": "2005",
+    "end": "2010"
+  },
+  {
+    "id" : 1,
+    "place": "Medical Campus - Kuwait University",
+    "degree": "Doctoral",
+    "start": "2010",
+    "end": "2014"
+  }
+]

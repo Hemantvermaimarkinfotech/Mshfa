@@ -1,0 +1,165 @@
+@import 'src/styles/variables';
+
+.pharmacist-order-details-page {
+  .page-metadata {
+    width: 326px;
+    margin-right: 24px;
+  }
+  &__body {
+    display: flex;
+    justify-content: stretch;
+    height: 798px;
+  }
+  &__sidebar {
+    width: 326px;
+    margin-right: 24px;
+    background-color: $brand_color_white;
+    padding: 24px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    .titled-text {
+      margin-top: 24px;
+    }
+    .delivery-info-title {
+      font-family: "Roboto-Medium";
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.15px;
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 2px dashed $brand_color_grey;
+    }
+  }
+  .pharmacy-name {
+    font-family: "Roboto-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.44px;
+  }
+  &__content {
+    width: 100%;
+    background-color: $brand_color_white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    .table {
+      padding: 12px 32px 0;
+      flex-grow: 1;
+      .MuiDataGrid {
+        &-root {
+          border: none;
+        }
+        &-columnsContainer {
+          background-color: inherit;
+        }
+        &-colCellTitle {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 0.4px;
+          color: $brand_color_grey_dark;
+        }
+        &-cell {
+          font-family: "Roboto-Medium";
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      .cell--with-image {
+        .cell__image-outer {
+          width: 64px;
+          height: 64px;
+          border-radius: unset;
+        }
+        .cell__text {
+          font-family: "Roboto-Medium";
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          white-space: normal;
+        }
+      }
+    }
+    .order-total-block {
+      border-top: 1px solid $brand_color_grey_lighter;
+      display: flex;
+      flex-direction: column;
+      padding: 18px 24px;
+      align-items: flex-end;
+      background-color: $brand_color_grey_white;
+      &__row {
+        display: flex;
+        flex-direction: row;
+        .title, .value {
+          font-family: "Roboto-Medium";
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          color: $brand_color_grey_dark;
+        }
+        &.total {
+          .title, .value {
+            font-family: "Roboto-Medium";
+            font-weight: 700;
+            letter-spacing: 0.41px;
+            font-size: 18px;
+            line-height: 41px;
+          }
+          margin-top: 2px;
+          .value {
+            color: $brand_color_black;
+          }
+        }
+        &.subtotal {
+          margin-top: 2px;
+        }
+        .value {
+          width: 130px;
+          justify-content: flex-end;
+          display: flex;
+        }
+
+      }
+    }
+    .add-medicine-input {
+      margin: 24px 24px 0 24px;
+    }
+  }
+  .page-actions {
+    justify-content: flex-end;
+    flex-grow: 1;
+    .pull-left {
+      margin-right: auto;
+    }
+    button {
+      padding-right: 24px;
+      padding-left: 24px;
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+      }
+    }
+    .secondary-button {
+      border-color: $brand_color_grey_lighter;
+      background-color: $brand_color_white;
+      &.fill-icon-gray {
+        svg {
+          fill: $brand_color_grey;
+        }
+      }
+      &__text {
+        color: $brand_color_grey_dark;
+      }
+    }
+  }
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

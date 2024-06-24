@@ -1,0 +1,65 @@
+@import "src/styles/variables";
+
+.notification {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  min-width: 310px;
+  box-shadow: 0 24px 38px rgba(0, 0, 0, 0.14), 0 9px 46px rgba(0, 0, 0, 0.12), 0 11px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: #fff;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__action {
+    font-size: 11px;
+    color: $brand_color_grey;
+  }
+  &__pubdate {
+    font-size: 10px;
+    color: $brand_color_grey;
+  }
+  &__date {
+    font-size: 15px;
+    color: $brand_color_black;
+    margin-bottom: 16px;
+  }
+  &__patient {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  &__patient-info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  &__name {
+    font-size: 14px;
+    color: $brand_color_black;
+    margin-bottom: 4px;
+  }
+  &__uhi {
+    font-size: 11px;
+    color: $brand_color_grey;
+  }
+  &__close {
+    cursor: pointer;
+    .MuiSvgIcon-root {
+      color: $brand_color_grey;
+      &:hover {
+        color: $brand_color_black;
+      }
+    }
+  }
+  .start-appointment-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+
+.profile-avatar-outer {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    &.avatar-large {
+        width: 80px;
+        height: 80px;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

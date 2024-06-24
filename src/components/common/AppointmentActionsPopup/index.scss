@@ -1,0 +1,121 @@
+@import 'src/styles/variables';
+
+.MuiDialogContent-root {
+  &.dialog-content-style {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .appointment-actions-modal {
+    width: 454px;
+    max-height: 550px;
+    display: flex;
+    flex-direction: column;
+    &.small {
+      height: 88px;
+    }
+    &__content {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      .text-field {
+        height: 48px;
+        padding-left: 30px;
+      }
+    }
+    &__radio-group {
+      margin-top: 40px;
+    }
+    &__reschedule-group {
+
+    }
+    &__description {
+      display: flex;
+      flex-direction: row;
+      padding: 12px;
+      background-color: $brand_color_grey_light;
+      font-size: 14px;
+      line-height: 20px;
+      color: $brand_color_black_lighter;
+      letter-spacing: 0.25px;
+      margin: 0 -6px;
+      & > * {
+        margin: 0 6px;
+      }
+    }
+    &__patient-info {
+      display: flex;
+      flex-direction: row;
+      margin-top: 24px;
+      .titled-text {
+        width: 50%;
+        &__text {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          line-height: 24px;
+          font-size: 16px;
+        }
+      }
+    }
+    &__buttons {
+      display: flex;
+      justify-content: flex-end;
+      height: 48px;
+      margin: 20px -5px;
+
+      .neutral-button {
+        background-color: $brand_color_grey;
+        &:hover {
+          background-color: $brand_color_grey-dark;
+        }
+      }
+
+      & > * {
+        margin: 0 5px;
+      }
+    }
+    .timeslot-select {
+      margin-top: 24px;
+      .date-input {
+        .MuiFormControl-root {
+          width: 100%;
+        }
+      }
+    }
+    .not-found {
+      font-size: 16px;
+      line-height: 40px;
+      color: $brand_color_grey;
+    }
+    .autocomplete-input, .select-input {
+      margin-top: 17px;
+      width: 100%;
+
+      .MuiOutlinedInput-notchedOutline {
+        border-radius: 4px;
+      }
+    }
+  }
+}
+.select-doctor-info {
+  display: flex;
+  flex-direction: row;
+  .avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 8px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .name {
+    line-height: 24px;
+  }
+}

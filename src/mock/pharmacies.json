@@ -1,0 +1,130 @@
+[
+  {
+    "id": 0,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Shuwaikh Area, Block 1, Street 6, Bld 152",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Active"
+  },
+  {
+    "id": 1,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Shuwaikh Area, Block 1, Street 6, Bld 152",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Blocked"
+  },
+  {
+    "id": 2,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Walk-in",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Shuwaikh Area, Block 1, Street 6, Bld 152",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Active"
+  },
+  {
+    "id": 4,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Walk-in",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Blocked"
+  },
+  {
+    "id": 5,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Shuwaikh Area, Block 1, Street 6, Bld 152",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Active"
+  },
+  {
+    "id": 6,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Walk-in",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Blocked"
+  },
+  {
+    "id": 7,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Shuwaikh Area, Block 1, Street 6, Bld 152",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Active"
+  },
+  {
+    "id": 8,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Shuwaikh Area, Block 1, Street 6, Bld 152",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Active"
+  },
+  {
+    "id": 9,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Walk-in",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Blocked"
+  },
+  {
+    "id": 10,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Shuwaikh Area, Block 1, Street 6, Bld 152",
+    "email": "test@test.com",
+    "phone": "444444",
+    "status": "Active"
+  },
+  {
+    "id": 11,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Shuwaikh Area, Block 1, Street 6, Bld 152",
+    "email": "testqq@test.com",
+    "phone": "12421n3",
+    "status": "Active"
+  },
+  {
+    "id": 12,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Shuwaikh Area, Block 1, Street 6, Bld 152",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Active"
+  },
+  {
+    "id": 13,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Shuwaikh Area, Block 1, Street 6, Bld 152",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Active"
+  },
+  {
+    "id": 14,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Shuwaikh Area, Block 1, Street 6, Bld 152",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Active"
+  },
+  {
+    "id": 15,
+    "name": "Bayan Co-Operative Society Pharmacy",
+    "address": "Shuwaikh Area, Block 1, Street 6, Bld 152",
+    "email": "test@test.com",
+    "phone": "12421n3",
+    "status": "Active"
+  }
+]

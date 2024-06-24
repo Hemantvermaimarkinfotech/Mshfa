@@ -1,0 +1,27 @@
+@import "src/styles/variables";
+
+.subject-status-bar {
+  display: flex;
+  align-items: center;
+  margin: 0 -4px;
+  &__indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 4px;
+  }
+  &__text {
+    font-size: 14px;
+    margin: 0 4px;
+  }
+  &--active, &--online {
+    .subject-status-bar__indicator {
+      background-color: $status_success;
+    }
+  }
+  &--blocked, &--offline {
+    .subject-status-bar__indicator {
+      background-color: $status_fail;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import 'src/styles/variables';
+
+.future-appointments-page {
+  background-color: $brand_color_grey_light;
+  padding-right: 0;
+
+  &--walk-in {
+    padding-right: 24px;
+  }
+
+}

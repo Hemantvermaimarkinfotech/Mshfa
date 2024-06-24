@@ -1,0 +1,123 @@
+@import 'src/styles/variables';
+
+.summary-appointment-form {
+  margin-bottom: 100px;
+  &__row {
+    display: flex;
+    align-items: center;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__fields {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 95%;
+    padding: 12px 0;
+    overflow: hidden;
+    & > * {
+      width: 100%;
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &.sign-field {
+      .select-input {
+        width: 50%;
+        .input-value {
+          overflow: hidden;
+        }
+      }
+      .text-field {
+        width: 45%;
+      }
+    }
+  }
+  &__action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100px;
+    cursor: pointer;
+    flex-basis: 5%;
+    .add-button {
+      color: $brand_color;
+      border: 1px solid $brand_color;
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+    }
+    .load-button {
+      position: relative;
+      color: $brand_color_grey;
+      width: 30px;
+      height: 30px;
+      .box-loader {
+        width: 30px;
+      }
+    }
+    .delete-button {
+      width: 30px;
+      height: 30px;
+      color: $brand_color_grey;
+      &:hover {
+        color: $brand_color;
+      }
+    }
+
+  }
+
+  &__separator {
+    height: 1px;
+    border-bottom: 1px dashed $brand_color_grey;
+    width: 100%;
+  }
+
+  &__buttons {
+    margin: 24px -12px;
+    display: flex;
+    align-items: center;
+    .secondary-button {
+      padding: 13.5px 0;
+      flex-basis: 25%;
+      margin: 0 12px;
+    }
+  }
+
+  &__subpart {
+    margin: 12px 0;
+  }
+
+  &__part {
+    padding: 12px 0;
+  }
+
+  .titled-block {
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .actions-bar {
+    & > * {
+      color: $brand_color_grey;
+      margin-right: 15px;
+      cursor: pointer;
+      &:hover {
+        color: $brand_color;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .select-input {
+    .MuiInputBase-root {
+      border-radius: 4px;
+    }
+  }
+}

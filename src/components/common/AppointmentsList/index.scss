@@ -1,0 +1,96 @@
+@import "src/styles/variables";
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .appointments-item {
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 18px;
+      border-radius: 4px;
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+
+    &__name {
+      font-size: 16px;
+      width: 248px;
+      line-height: 32px;
+    }
+
+    &__block {
+      display: flex;
+      align-items: center;
+      width: 120px;
+    }
+
+    &__title {
+      color: $brand_color_grey;
+      margin-right: 3px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+    }
+
+    &__value {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+    }
+
+
+    &__label {
+      color: $brand_color_grey;
+      display: flex;
+      align-items: center;
+      &--active {
+        .MuiSvgIcon-root, .appointments-item__label-text {
+          color: $brand_color_green;
+        }
+      }
+      .MuiSvgIcon-root {
+        margin-right: 10px;
+        font-size: 25px;
+      }
+      &-text {
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+
+    &__actions {
+      display: flex;
+      flex-direction: row;
+      margin: 0 -10px;
+      button {
+        padding: 10px 12px;
+
+      }
+      & > * {
+        margin: 0 5px;
+      }
+    }
+
+    .start-appointment-button {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+}

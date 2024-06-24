@@ -1,0 +1,54 @@
+@import 'src/styles/variables';
+
+.forgot-password-form {
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    text-decoration: none;
+    .text-button {
+      color: $brand_color_grey;
+      font-family: 'Roboto-Light';
+    }
+  }
+
+  &__text {
+    color: $brand_color_grey;
+    text-decoration: none;
+    font-family: 'Roboto-Light';
+    font-size: 13px;
+    b {
+      font-family: 'Roboto-Regular';
+    }
+  }
+
+  &__resend {
+    display: flex;
+    align-items: center;
+    .forgot-password-form__text {
+      margin-right: 5px;
+    }
+  }
+
+  &__resend-button {
+    color: $brand_color;
+    text-decoration: none;
+    font-family: 'Roboto-Regular';
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .text-button {
+    font-size: 13px;
+    padding: 4px;
+  }
+
+  &__form {
+    & > .text-field {
+      margin-bottom: 44px;
+    }
+  }
+}

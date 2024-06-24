@@ -1,0 +1,43 @@
+@import "../../../../styles/variables";
+
+.diploma-field {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    &>button {
+      margin-left: 10px;
+    }
+  }
+
+  &__close {
+    cursor: pointer;
+    &.MuiSvgIcon-root {
+      color: $brand_color_grey;
+      font-size: 30px;
+      &:hover {
+        color: $brand_color;
+      }
+    }
+  }
+
+  .diploma-field__row {
+    .text-field {
+      width: 93%;
+    }
+  }
+
+  &--completed {
+    margin-bottom: 32px;
+    border-bottom: 1px solid $brand_color_grey;
+    .diploma-field__row {
+      .text-field {
+        width: 93%;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "src/styles/variables";
+
+.text-chat {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: hidden;
+  &__content {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    padding: 0 5px;
+  }
+  &__footer {
+    width: 100%;
+    background-color: $brand_color_grey_light;
+    display: flex;
+    justify-content: stretch;
+  }
+  &__input {
+    width: 100%;
+  }
+  .text-chat__icon {
+    width: 30px;
+    height: 30px;
+    color: $brand_color;
+    padding: 0;
+    cursor: pointer;
+    transition: .2s ease;
+    display: flex;
+    align-self: flex-start;
+    margin: 5px;
+    &.link {
+      transform: rotate(90deg);
+      &:hover {
+        transform: scale(1.1) rotate(90deg);
+      }
+    }
+    &--disabled {
+      color: $brand_color_grey;
+      pointer-events: none;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .text-field {
+    .MuiOutlinedInput-notchedOutline {
+      border: none;
+    }
+  }
+}

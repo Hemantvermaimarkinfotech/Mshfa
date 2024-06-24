@@ -1,0 +1,27 @@
+@import 'src/styles/variables';
+
+.dialog {
+  &__close {
+    padding: 0 !important;
+  }
+  .neutral-button, .primary-button {
+    padding: 14.5px 30px;
+  }
+  .neutral-button {
+    background-color: $brand_color_grey;
+    &:hover {
+      background-color: $brand_color_grey-dark;
+    }
+  }
+  .MuiDialogActions-root {
+    padding: 24px;
+  }
+  .MuiDialogTitle-root {
+    padding: 24px;
+    .MuiTypography-root {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "src/styles/variables";
+
+.global-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__text {
+    font-size: 25px;
+    color: $brand_color_black;
+  }
+  &__logo {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,47 @@
+@import "src/styles/variables";
+
+.file-upload {
+  display: flex;
+  align-items: center;
+  border: 1px solid $brand_color_grey;
+  padding-right: 16px;
+  border-radius: 4px;
+  position: relative;
+  &__input {
+    display: none;
+  }
+  &__image {
+    padding: 10px;
+    border-right: 1px solid $brand_color_grey;
+  }
+  &__icon {
+    color: #F4F8FD;
+  }
+  &__info {
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 14px;
+    color: $brand_color_black;
+  }
+  &__caption {
+    font-size: 11px;
+    color: $brand_color_grey;
+  }
+  &__placeholder {
+    font-size: 14px;
+    color: $brand_color_grey;
+  }
+
+  .text-button {
+    padding: 0 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    color: $brand_color;
+    text-transform: uppercase;
+  }
+}

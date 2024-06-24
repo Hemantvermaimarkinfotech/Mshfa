@@ -1,0 +1,26 @@
+@import 'src/styles/variables';
+
+.profile-working-hours {
+  .day-working-hours {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    line-height: 24px;
+    .day-name {
+      text-transform: capitalize;
+    }
+    .current-day {
+      padding: 0 5px;
+      color: #b2b9c4;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .is-opened {
+    button {
+      transform: rotate(180deg);
+    }
+  }
+}
+

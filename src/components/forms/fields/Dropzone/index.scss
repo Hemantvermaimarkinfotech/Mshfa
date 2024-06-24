@@ -1,0 +1,29 @@
+@import "src/styles/variables";
+
+.dropzone {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 17px 0;
+  border: 1px dashed $brand_color_grey_lighter;
+  cursor: pointer;
+  border-radius: 3px;
+  &:hover {
+    border-color: $brand_color_grey;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+  &__caption {
+    font-size: 12px;
+    color: $brand_color_grey;
+  }
+  &__link {
+    color: $brand_color;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

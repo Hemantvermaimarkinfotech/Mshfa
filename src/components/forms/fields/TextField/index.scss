@@ -1,0 +1,53 @@
+@import "src/styles/variables";
+
+.text-field {
+  width: 100%;
+  position: relative;
+
+  .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(38, 50, 56, 0.16);
+  }
+
+  .MuiFormLabel-root {
+    color: $brand_color_grey;
+    &.Mui-focused {
+      color: $brand_color;
+    }
+  }
+
+  .MuiInputBase-root {
+
+  }
+
+  .MuiFormHelperText-root {
+    margin-left: 0;
+    position: absolute;
+    bottom: -18px
+  }
+
+  .MuiOutlinedInput-root {
+    border-color: $brand_color;
+  }
+
+  .MuiOutlinedInput-root:hover > .MuiOutlinedInput-notchedOutline {
+    border-color: $brand_color;
+  }
+
+  .MuiOutlinedInput-multiline.MuiOutlinedInput-marginDense {
+    padding-top: inherit;
+    padding-bottom: inherit;
+  }
+
+  &--small {
+    .MuiOutlinedInput-inputMarginDense {
+      padding-top: 12.5px;
+      padding-bottom: 12.5px;
+    }
+    .MuiInputLabel-outlined.MuiInputLabel-marginDense {
+      transform: translate(14px, 14px) scale(1);
+    }
+    .MuiInputLabel-outlined.MuiInputLabel-shrink {
+      transform: translate(14px, -6px) scale(0.75);
+    }
+  }
+}

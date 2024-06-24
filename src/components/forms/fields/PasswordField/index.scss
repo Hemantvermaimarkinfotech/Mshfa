@@ -1,0 +1,13 @@
+@import "src/styles/variables";
+
+.password-field {
+  position: relative;
+  &__icon {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    transform: translateY(-50%);
+    color: #B9C2CC;
+  }
+}

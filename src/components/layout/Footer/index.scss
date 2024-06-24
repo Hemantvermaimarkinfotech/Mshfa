@@ -1,0 +1,39 @@
+@import 'src/styles/variables';
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  background-color: #DCE2E9;
+  &__copyright {
+    font-weight: 300;
+    color: $brand_color_grey_dark;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    color: $brand_color_grey_dark;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 24px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      color: $brand_color_black;
+    }
+  }
+}

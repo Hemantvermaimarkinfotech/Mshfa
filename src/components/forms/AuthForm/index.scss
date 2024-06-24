@@ -1,0 +1,58 @@
+@import "src/styles/variables";
+
+.auth-form {
+  padding: 64px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  width: 100%;
+  &__logo {
+    margin-bottom: 25px;
+    width: 200px;
+  }
+
+  &__title {
+    color: $brand_color_black;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__caption {
+    color: $brand_color_grey;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__error {
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    width: 100%;
+  }
+
+  &__disclaimer {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    margin: 0;
+    color: $brand_color_black;
+    padding: 0 20px;
+    &-link {
+      color: $brand_color;
+      cursor: pointer;
+    }
+  }
+
+  .primary-button {
+    margin-bottom: 24px;
+    width: 100%;
+    font-size: 20px;
+    padding: 12px 0;
+  }
+}

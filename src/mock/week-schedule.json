@@ -1,0 +1,69 @@
+[
+  {
+    "name": "Sun",
+    "slots": [
+      {
+        "date": "8:00 am - 12:00 pm"
+      },
+      {
+        "date": "1:00 pm - 8:00 pm"
+      }
+    ]
+  },
+  {
+    "name": "Mon",
+    "slots": [
+      {
+        "date": "8:00 am - 12:00 pm"
+      },
+      {
+        "date": "1:00 pm - 8:00 pm"
+      }
+    ]
+  },
+  {
+    "name": "Tue",
+    "slots": [
+      {
+        "date": "8:00 am - 12:00 pm"
+      },
+      {
+        "date": "1:00 pm - 8:00 pm"
+      }
+    ]
+  },
+  {
+    "name": "Wed",
+    "slots": [
+      {
+        "date": "8:00 am - 12:00 pm"
+      },
+      {
+        "date": "1:00 pm - 8:00 pm"
+      }
+    ]
+  },
+  {
+    "name": "Thu",
+    "slots": [
+      {
+        "date": "8:00 am - 12:00 pm"
+      },
+      {
+        "date": "1:00 pm - 8:00 pm"
+      }
+    ]
+  },
+  {
+    "name": "Fri",
+    "slots": [
+      {
+        "date": "8:00 am - 12:00 pm"
+      }
+    ]
+  },
+  {
+    "name": "Sat",
+    "slots": []
+  }
+]

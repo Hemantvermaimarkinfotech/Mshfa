@@ -1,0 +1,18 @@
+@import "src/styles/variables";
+
+.referral {
+  border-radius: 4px;
+  border: 1px solid $brand_color_grey_lighter;
+  padding: 16px;
+  &__title {
+    font-weight: 800;
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .titled-text {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

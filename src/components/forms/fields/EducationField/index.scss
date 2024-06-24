@@ -1,0 +1,61 @@
+@import "src/styles/variables";
+
+.education-field {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    width: 323px;
+    &--compact {
+      width: 281px;
+    }
+    &--extra {
+      width: auto;
+      &>button {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    &--compact {
+      justify-content: flex-start;
+    }
+  }
+
+  &__close {
+    cursor: pointer;
+    &.MuiSvgIcon-root {
+      color: $brand_color_grey;
+      margin-top: 6px;
+      font-size: 30px;
+      &:hover {
+        color: $brand_color;
+      }
+    }
+  }
+
+  .education-field__row {
+    .select-input {
+      width: 153px;
+    }
+  }
+
+  &--completed {
+    flex-direction: row;
+    margin-bottom: 32px;
+    border-bottom: 1px solid $brand_color_grey;
+    //.education-field__row {
+    //  .text-field {
+    //    width: 323px;
+    //  }
+    //}
+  }
+}

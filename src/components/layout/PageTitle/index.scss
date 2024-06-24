@@ -1,0 +1,13 @@
+@import "src/styles/variables";
+
+.page-title {
+  &__title {
+    margin: 0;
+    font-size: 24px;
+    color: $brand_color_black;
+  }
+  &__caption {
+    font-size: 14px;
+    color: $brand_color_grey;
+  }
+}

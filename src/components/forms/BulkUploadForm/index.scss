@@ -1,0 +1,49 @@
+@import "src/styles/variables";
+
+.bulk-upload-form {
+
+  &__item {
+    margin-bottom: 4px;
+  }
+  &__text {
+    font-size: 14px;
+    &--caption {
+      color: $brand_color_grey;
+    }
+  }
+  .separator {
+    padding-bottom: 12px;
+  }
+  &__caption {
+    color: $brand_color_grey;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  &__link {
+    color: $brand_color;
+    font-weight: 800;
+  }
+  &__phone {
+    color: $brand_color;
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .titled-block {
+    margin-bottom: 24px;
+    &__title {
+      color: $brand_color_grey;
+      font-size: 10px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+  }
+  .file-upload {
+    margin-bottom: 16px;
+  }
+  .text-button {
+    padding: 17px 30px;
+  }
+}

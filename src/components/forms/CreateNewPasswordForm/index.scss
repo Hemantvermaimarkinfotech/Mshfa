@@ -1,0 +1,23 @@
+@import 'src/styles/variables';
+
+.create-new-password-form {
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .text-button {
+    color: $brand_color_grey;
+    text-decoration: none;
+    font-family: 'Roboto-Light';
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  &__form {
+    & > .password-field {
+      margin-bottom: 32px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+
+.sick-leaves {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    .select-input {
+      width: 200px;
+    }
+    .search-input {
+      input {
+        width: 250px;
+      }
+    }
+  }
+  .table {
+    .MuiDataGrid-root {
+      background-color: #fff;
+    }
+    .MuiDataGrid-columnsContainer {
+      background-color: rgb(252, 253, 254);
+    }
+  }
+}
+

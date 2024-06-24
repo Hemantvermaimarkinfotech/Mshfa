@@ -1,0 +1,21 @@
+.medicines-page {
+  .search-input {
+    width: 324px;
+    &__input {
+      flex-basis: 90%;
+    }
+  }
+  .select-input {
+    width: 250px;
+  }
+  .table {
+    .cell {
+      &--with-image {
+        .cell__image-outer {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}

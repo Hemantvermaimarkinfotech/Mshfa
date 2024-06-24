@@ -1,0 +1,15 @@
+@import "../../../styles/variables";
+
+.diplomas-list {
+  &__item {
+    padding: 17px 0;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    &:first-child {
+      border-top: 1px solid rgb(224, 224, 224);
+    }
+  }
+  &__text {
+    font-size: 16px;
+    color: $brand_color_black;
+  }
+}
